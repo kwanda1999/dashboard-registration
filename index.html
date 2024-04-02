@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Dashboard</title>
+    <link rel="stylesheet" href="styles.css">   <!-- CSS file -->
+</head>
+<body>
+            
+    <div class="container">
+        <h1 align="center">Welcome to our Platform</h1>
+        <h2 align="center"> Please enter your info to register with us </h2>
+       
+        <!--Input form action and method-->
+
+        <form>
+            <label for="name"> Name </label>
+            <input type="text" id="name" name="name" required />   </br>
+
+            <p>Please tell us your surname </p>
+
+            <label for="surname"> Surname </label>
+            <input type="text" id="surname" name="surname" required />  </br>
+
+            <p> Please enter a valid cell phone number</p>
+
+            <label for="cell"> Cellphone Number</label>
+            <input type="text" id="cell" name="cell" pattern="[0-9]" required />    </br>
+
+            <p> Please select your gender</p>
+
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="female"> Female </option>
+                <option value="male"> Male </option>
+            </select>   </br>
+
+            <p> Please enter a valid email address</p>
+
+            <label for="email"> Email </label>
+            <input type="text" id="email" name="email" required />   </br>
+
+            <p> Please enter a password between 8 to 15 characters which contain at least one lowercase letter, </br>
+            one uppercase letter, one numeric digit, and one special character.</p>
+
+            <label for="password"> Password </label>
+            <input type="text" id="password" name="password" required /> </br>
+
+
+            <button type="submit"> Register </button>
+        </form>
+
+
+    </div>
+    <script src="script.js"></script>  <!-- JavaScript file -->
+</body>
+</html>
